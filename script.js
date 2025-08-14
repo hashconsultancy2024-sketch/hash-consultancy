@@ -1,19 +1,14 @@
-document.getElementById("inquiryForm").addEventListener("submit", function(e) {
-    e.preventDefault();
+body {
+  scroll-behavior: smooth;
+}
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
+/* Hero section text shadow */
+section.bg-indigo-600 h2 {
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
 
-    if (!name || !email || !message) {
-        document.getElementById("formStatus").innerText = "Please fill in all fields.";
-        document.getElementById("formStatus").style.color = "red";
-        return;
-    }
-
-    // You can connect this to your backend email service
-    document.getElementById("formStatus").innerText = "Inquiry sent successfully! We'll get back to you.";
-    document.getElementById("formStatus").style.color = "green";
-
-    document.getElementById("inquiryForm").reset();
-});
+/* Button smooth hover */
+button:hover {
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
