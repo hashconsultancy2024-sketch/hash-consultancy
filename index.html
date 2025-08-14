@@ -7,44 +7,42 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 font-sans text-gray-800">
+<body class="bg-gray-900 text-gray-200 font-sans">
 
   <!-- Header -->
-  <header class="bg-white shadow-md fixed w-full z-50">
+  <header class="bg-gray-800 shadow-md fixed w-full z-50">
     <div class="container mx-auto flex justify-between items-center p-6">
-      <h1 class="text-2xl font-bold text-indigo-600">Hash Consultancy</h1>
+      <h1 class="text-2xl font-bold text-indigo-500">Hash Consultancy</h1>
       <nav class="space-x-6">
-        <a href="#services" class="hover:text-indigo-600">Services</a>
-        <a href="#process" class="hover:text-indigo-600">How We Work</a>
-        <a href="#inquiry" class="hover:text-indigo-600">Inquiry</a>
+        <a href="#services" class="hover:text-indigo-400 transition">Services</a>
+        <a href="#process" class="hover:text-indigo-400 transition">How We Work</a>
+        <a href="#inquiry" class="hover:text-indigo-400 transition">Inquiry</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-indigo-600 text-white py-40 mt-20">
-    <div class="container mx-auto text-center px-4">
-      <h2 class="text-5xl font-bold mb-4">Professional CA Services You Can Trust</h2>
-      <p class="mb-8 text-lg max-w-xl mx-auto">Expert advice, seamless process, and complete confidentiality for all your accounting and financial needs.</p>
-      <a href="#inquiry" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Get Started</a>
-    </div>
+  <section class="bg-gray-900 py-40 mt-20 text-center px-4">
+    <h2 class="text-5xl font-bold mb-4 text-indigo-500">Professional CA Services You Can Trust</h2>
+    <p class="mb-8 max-w-xl mx-auto text-gray-300 text-lg">Expert advice, seamless process, and complete confidentiality for all your accounting and financial needs.</p>
+    <a href="#inquiry" class="bg-indigo-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-600 transition">Get Started</a>
   </section>
 
   <!-- Services Section -->
   <section id="services" class="py-20">
     <div class="container mx-auto px-4">
-      <h3 class="text-4xl font-bold text-center mb-12">Our Services</h3>
+      <h3 class="text-4xl font-bold text-center mb-12 text-indigo-500">Our Services</h3>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
-          <h4 class="text-2xl font-semibold mb-4">Income Tax Filing</h4>
+        <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
+          <h4 class="text-2xl font-semibold mb-4 text-indigo-400">Income Tax Filing</h4>
           <p>Accurate and timely tax filing with expert guidance for individuals and businesses.</p>
         </div>
-        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
-          <h4 class="text-2xl font-semibold mb-4">Company Registration</h4>
+        <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
+          <h4 class="text-2xl font-semibold mb-4 text-indigo-400">Company Registration</h4>
           <p>Register your business legally and hassle-free with our full-service CA support.</p>
         </div>
-        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
-          <h4 class="text-2xl font-semibold mb-4">Audit & Compliance</h4>
+        <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
+          <h4 class="text-2xl font-semibold mb-4 text-indigo-400">Audit & Compliance</h4>
           <p>Comprehensive audits and compliance reports to ensure peace of mind and accuracy.</p>
         </div>
       </div>
@@ -52,22 +50,22 @@
   </section>
 
   <!-- Process Section -->
-  <section id="process" class="bg-gray-100 py-20">
+  <section id="process" class="bg-gray-950 py-20">
     <div class="container mx-auto px-4">
-      <h3 class="text-4xl font-bold text-center mb-12">How We Work</h3>
+      <h3 class="text-4xl font-bold text-center mb-12 text-indigo-500">How We Work</h3>
       <div class="grid md:grid-cols-3 gap-8 text-center">
         <div class="p-6">
-          <div class="text-indigo-600 text-5xl mb-4">1</div>
+          <div class="text-indigo-400 text-5xl mb-4">1</div>
           <h4 class="font-semibold mb-2">Consultation</h4>
           <p>We understand your requirements and suggest the most effective solution.</p>
         </div>
         <div class="p-6">
-          <div class="text-indigo-600 text-5xl mb-4">2</div>
+          <div class="text-indigo-400 text-5xl mb-4">2</div>
           <h4 class="font-semibold mb-2">Documentation</h4>
           <p>We prepare and organize all necessary documents efficiently and securely.</p>
         </div>
         <div class="p-6">
-          <div class="text-indigo-600 text-5xl mb-4">3</div>
+          <div class="text-indigo-400 text-5xl mb-4">3</div>
           <h4 class="font-semibold mb-2">Execution</h4>
           <p>Fast, accurate, and transparent service delivery with full customer support.</p>
         </div>
@@ -78,28 +76,25 @@
   <!-- Inquiry Section -->
   <section id="inquiry" class="py-20">
     <div class="container mx-auto px-4 max-w-lg">
-      <h3 class="text-4xl font-bold text-center mb-8">Request a CA Service</h3>
-      <form id="inquiryForm" action="https://formspree.io/f/xvgqybla" method="POST" class="bg-white p-8 rounded-xl shadow-lg space-y-4">
-        <input type="text" name="name" placeholder="Your Name" class="w-full border p-3 rounded-lg" required>
-        <input type="email" name="email" placeholder="Your Email" class="w-full border p-3 rounded-lg" required>
-        <input type="text" name="service" placeholder="Service Required" class="w-full border p-3 rounded-lg" required>
-        <textarea name="message" placeholder="Additional Details" class="w-full border p-3 rounded-lg" rows="4"></textarea>
-        <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">Submit Inquiry</button>
-        <p id="formMessage" class="text-green-600 font-semibold mt-2 hidden">Submitted successfully! We will contact you soon.</p>
+      <h3 class="text-4xl font-bold text-center mb-8 text-indigo-500">Request a CA Service</h3>
+      <form id="inquiryForm" action="https://formspree.io/f/xvgqybla" method="POST" class="bg-gray-800 p-8 rounded-xl shadow-lg space-y-4">
+        <input type="text" name="name" placeholder="Your Name" class="w-full border border-gray-700 p-3 rounded-lg bg-gray-900 text-gray-200" required>
+        <input type="email" name="email" placeholder="Your Email" class="w-full border border-gray-700 p-3 rounded-lg bg-gray-900 text-gray-200" required>
+        <input type="text" name="service" placeholder="Service Required" class="w-full border border-gray-700 p-3 rounded-lg bg-gray-900 text-gray-200" required>
+        <textarea name="message" placeholder="Additional Details" class="w-full border border-gray-700 p-3 rounded-lg bg-gray-900 text-gray-200" rows="4"></textarea>
+        <button type="submit" class="w-full bg-indigo-500 text-white py-3 rounded-lg font-semibold hover:bg-indigo-600 transition">Submit Inquiry</button>
+        <p id="formMessage" class="text-green-400 font-semibold mt-2 hidden">Submitted successfully! We will contact you soon.</p>
       </form>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-8">
+  <footer class="bg-gray-950 text-gray-400 py-8">
     <div class="container mx-auto text-center px-4">
       <p>&copy; 2025 Hash Consultancy. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
-
-
