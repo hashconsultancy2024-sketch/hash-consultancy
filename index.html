@@ -1,65 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HASH - Chartered Accountants</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hash Consultancy</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <div class="logo">HASH</div>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Inquiry</a>
-        </nav>
-    </header>
+<body class="bg-gray-50 font-sans text-gray-800">
 
-    <section class="hero">
-        <h1>Professional CA Services for Your Business Growth</h1>
-        <p>At HASH, we deliver accurate, reliable, and timely accounting solutions with a premium touch.</p>
-        <a href="#contact" class="btn">Get Started</a>
-    </section>
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed w-full z-50">
+    <div class="container mx-auto flex justify-between items-center p-6">
+      <h1 class="text-2xl font-bold text-indigo-600">Hash Consultancy</h1>
+      <nav class="space-x-6">
+        <a href="#services" class="hover:text-indigo-600">Services</a>
+        <a href="#process" class="hover:text-indigo-600">How We Work</a>
+        <a href="#inquiry" class="hover:text-indigo-600">Inquiry</a>
+      </nav>
+    </div>
+  </header>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>HASH is a Chartered Accountant firm built on trust, precision, and innovation. We help businesses and individuals manage finances, taxation, and compliance with utmost professionalism.</p>
-    </section>
+  <!-- Hero Section -->
+  <section class="bg-indigo-600 text-white py-40 mt-20">
+    <div class="container mx-auto text-center px-4">
+      <h2 class="text-5xl font-bold mb-4">Professional CA Services You Can Trust</h2>
+      <p class="mb-8 text-lg max-w-xl mx-auto">Expert advice, seamless process, and complete confidentiality for all your accounting and financial needs.</p>
+      <a href="#inquiry" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Get Started</a>
+    </div>
+  </section>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service-list">
-            <div class="service-card">
-                <h3>Tax Filing</h3>
-                <p>Ensure compliance with hassle-free and accurate tax filing services.</p>
-            </div>
-            <div class="service-card">
-                <h3>Business Advisory</h3>
-                <p>Strategic financial guidance to grow your business efficiently.</p>
-            </div>
-            <div class="service-card">
-                <h3>Auditing</h3>
-                <p>Detailed and precise audits to maintain transparency and trust.</p>
-            </div>
+  <!-- Services Section -->
+  <section id="services" class="py-20">
+    <div class="container mx-auto px-4">
+      <h3 class="text-4xl font-bold text-center mb-12">Our Services</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
+          <h4 class="text-2xl font-semibold mb-4">Income Tax Filing</h4>
+          <p>Accurate and timely tax filing with expert guidance for individuals and businesses.</p>
         </div>
-    </section>
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
+          <h4 class="text-2xl font-semibold mb-4">Company Registration</h4>
+          <p>Register your business legally and hassle-free with our full-service CA support.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
+          <h4 class="text-2xl font-semibold mb-4">Audit & Compliance</h4>
+          <p>Comprehensive audits and compliance reports to ensure peace of mind and accuracy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Inquiry Form</h2>
-        <form id="inquiryForm">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Describe your CA service needs..." required></textarea>
-            <button type="submit">Submit Inquiry</button>
-        </form>
-        <p id="formStatus"></p>
-    </section>
+  <!-- Process Section -->
+  <section id="process" class="bg-gray-100 py-20">
+    <div class="container mx-auto px-4">
+      <h3 class="text-4xl font-bold text-center mb-12">How We Work</h3>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="p-6">
+          <div class="text-indigo-600 text-5xl mb-4">1</div>
+          <h4 class="font-semibold mb-2">Consultation</h4>
+          <p>We understand your requirements and suggest the most effective solution.</p>
+        </div>
+        <div class="p-6">
+          <div class="text-indigo-600 text-5xl mb-4">2</div>
+          <h4 class="font-semibold mb-2">Documentation</h4>
+          <p>We prepare and organize all necessary documents efficiently and securely.</p>
+        </div>
+        <div class="p-6">
+          <div class="text-indigo-600 text-5xl mb-4">3</div>
+          <h4 class="font-semibold mb-2">Execution</h4>
+          <p>Fast, accurate, and transparent service delivery with full customer support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2025 HASH. All rights reserved.</p>
-    </footer>
+  <!-- Inquiry Section -->
+  <section id="inquiry" class="py-20">
+    <div class="container mx-auto px-4 max-w-lg">
+      <h3 class="text-4xl font-bold text-center mb-8">Request a CA Service</h3>
+      <form id="inquiryForm" class="bg-white p-8 rounded-xl shadow-lg space-y-4">
+        <input type="text" name="name" placeholder="Your Name" class="w-full border p-3 rounded-lg" required>
+        <input type="email" name="email" placeholder="Your Email" class="w-full border p-3 rounded-lg" required>
+        <input type="text" name="service" placeholder="Service Required" class="w-full border p-3 rounded-lg" required>
+        <textarea name="message" placeholder="Additional Details" class="w-full border p-3 rounded-lg" rows="4"></textarea>
+        <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">Submit Inquiry</button>
+        <p id="formMessage" class="text-green-600 font-semibold mt-2 hidden">Thank you! We will contact you soon.</p>
+      </form>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto text-center px-4">
+      <p>&copy; 2025 Hash Consultancy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
 </body>
 </html>
